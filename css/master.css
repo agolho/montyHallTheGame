@@ -1,0 +1,11 @@
+html {
+  margin: 2em;
+}
+.a {
+  text-align: center;
+}
+
+a.disable {
+  pointer-events: none;
+  cursor: default;
+}

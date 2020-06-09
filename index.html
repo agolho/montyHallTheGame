@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link rel="stylesheet" href="css/master.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <meta charset="utf-8">
+    <title>Monty Hall The Web Game</title>
+    <link rel="icon" type="image/png" href="img/favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <div class="jumbotron">
+      <h1 class="display-4">Monty Hall The Web Game</h1>
+      <p class="lead">The Monty Hall problem is a brain teaser, in the form of a probability puzzle, loosely based on the American
+                      television game show Let's Make a Deal and named after its original host, Monty Hall. The problem was
+                      originally posed (and solved) in a letter by Steve Selvin to the American Statistician in 1975.</p>
+      <hr class="my-4">
+      <p class="lead">
+        <h1 id="scoreDisplay" class="display-4 pull-right">Score: 0</h1>
+      </p>
+      <div id="masterButton" class="">
+        <a onclick="openPrizeDoor();" class="btn btn-primary btn-lg" href="#" role="button">Open the Door Monty!</a>
+      </div>
+    </div>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-sm text-center">
+            <div id= "graph1" class="progress">
+              <div class="progress-bar" role="progressbar" style="width: 33%;" aria-valuenow="33" aria-valuemin="0" aria-valuemax="100">33%</div>
+            </div>
+          </div>
+          <div class="col-sm text-center">
+            <div id= "graph2" class="progress">
+              <div class="progress-bar" role="progressbar" style="width: 33%;" aria-valuenow="33" aria-valuemin="0" aria-valuemax="100">33%</div>
+            </div>
+          </div>
+          <div  class="col-sm text-center">
+            <div id= "graph3" class="progress">
+              <div class="progress-bar" role="progressbar" style="width: 33%;" aria-valuenow="33" aria-valuemin="0" aria-valuemax="100">33%</div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div id= "door1" class="col-sm text-center">
+            <img src="img/door_closed.jpg" alt="">
+          </div>
+          <div id= "door2" class="col-sm text-center">
+            <img src="img/door_closed.jpg" alt="">
+          </div>
+          <div id= "door3" class="col-sm text-center">
+            <img src="img/door_closed.jpg" alt="">
+          </div>
+        </div>
+        <div class="row">
+          <div id="1" class="col-sm text-center">
+            <button onclick="selectDoor1()" type="button" class="btn btn-danger">Door Number 1</button>
+          </div>
+          <div id="2" class="col-sm text-center">
+            <button onclick="selectDoor2()" type="button" class="btn btn-danger">Door Number 2</button>
+          </div>
+          <div id="3" class="col-sm text-center">
+            <button onclick="selectDoor3()" type="button" class="btn btn-danger">Door Number 3</button>
+          </div>
+        </div>
+    </div>
+
+  </body>
+  <script src="index.js" charset="utf-8"></script>
+</html>
