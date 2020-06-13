@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/master.css">
+    <title>Game Theories</title>
+  </head>
+  <body>
+    <div class="tit-for-tat">
+      <h1>Tit-for-Tat</h1>
+      <h3 id="scoreDisplay">Your Score: 0</h3>
+      <h3 id="oppScoreDisplay">Opponent Score: 0</h3>
+      <br>
+      <div class="lastRound">
+        <h4>Last Round:</h4>
+        <p id="youDisplay">You: </p>
+        <p id="opponentDisplay">Opponent: </p>
+      </div>
+
+
+      <button onclick="cooperate()" type="button" class="btn btn-success">Cooperate</button>
+      <button onclick="defect()" type="button" class="btn btn-danger">Defect</button>
+    </div>
+
+    <div class="">
+      <h1 id="roundScore"></h1>
+    </div>
+    
+  </body>
+  <script src="index.js" charset="utf-8"></script>
+</html>
